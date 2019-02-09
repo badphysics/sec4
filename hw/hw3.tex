@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt]{article}
+ \usepackage{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ,multicol}
+\pagestyle{fancy}
+%\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{problem}{1}
+  Evaluate each expression
+\begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item  $ -9^{1/2}$
+  \item $27^{1/3}$
+  \item $ (-64)^{1/3}$
+  \item $(-27)^{4/3}$
+  \item $125^{-2/3}$
+  \item $8^{-4/3}$
+  \item $ \left(\frac{1}{4}\right)^{1/2}$
+  \item $ \left( \frac{4}{9} \right)^{3/2}$
+    \item $\left(-\frac{8}{27}\right)^{2/3}$
+    \item $7\sqrt{288}$
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{2}
+  Simplify
+\begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item $ \frac{\sqrt{28}}{6}$
+  \item $\sqrt[4]{\frac{16}{81}}$
+  \item $ \sqrt{48}$
+  \item $ 3\sqrt{121} $
+  \item $y^{2/3}\cdot y^{7/3}$
+  \item $ \left( a^{1/2}b^{1/3}\right)^2$
+  \item $ (2a^{1/2})(3a)$
+  \item $ 10^{2/3}$
+  \item $ -2^{1/4}$
+  \item $ \sqrt[3]{\frac{-8a^3}{b^{15}}}$
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+\begin{problem}{3}
+  Simplify and rationalize the denominator if appropriate
+ \begin{multicols}{2}
+   \begin{enumerate}[label=\roman*)]
+     \item $ \sqrt{28}$
+     \item $\frac{1}{\sqrt{5}}$
+     \item $ \frac{7}{\sqrt{7}}$
+     \item $\sqrt{\frac{x}{8}}$
+     \item $ \sqrt[3]{40}$
+     \item $ \sqrt[3]{54}$
+     \item $\sqrt[3]{-250x^3}$
+     \item $ \sqrt[3]{-24z^5}$
+     \item $\frac{\sqrt{3}-\sqrt{5}}{\sqrt{3}+\sqrt{5}}$
+     \item $\sqrt{18a}\div\sqrt{2a^4}$
+     \item $\frac{2\sqrt{5}-\sqrt{15}}{\sqrt{15}-3\sqrt{3}}$
+     \item $\frac{\sqrt{5}-\sqrt{7}}{\sqrt{7}+\sqrt{5}}$
+     \item $ \frac{23}{\sqrt{2}+1}$
+     \item $ \frac{7}{2\sqrt{2}+1} $
+     \item $ -2\sqrt[3]{-48v^7}$
+       \item $ \-8\sqrt[7]{384b^8} $
+  \end{enumerate}
+ \end{multicols}
+\end{problem}
+
+
+\begin{problem}{4} Simplify
+ \begin{multicols}{2}
+   \begin{enumerate}[label=\roman*)]
+   \item $\sqrt{8}+\sqrt{20}-\sqrt{12}$
+   \item $\sqrt{18}-\sqrt{50}+\sqrt{12}-\sqrt{75}$
+   \item $ 2\sqrt{3}(3-\sqrt{3})$
+   \item $ 3(2\sqrt{12}-\sqrt{90})$
+   \item $(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})$
+   \item $ \sqrt{15ab}(\sqrt{5a}-\sqrt{3b})$
+   \item $2\sqrt[3]{40a^4b^8}$
+   \item $ \sqrt[5]{x^{25}y^{17}z^3}$
+   \item $ -6\sqrt[4]{32x^7yz^7} $
+   \item $ 3\sqrt[3]{135xy^3} $
+  \end{enumerate}
+ \end{multicols}
+\end{problem}
+
+%% \begin{problem}{5} Simplify
+%%  \begin{multicols}{2}
+%%    \begin{enumerate}[label=\roman*)]
+%%    \item $\left(\frac{1}{x}+\frac{1}{y}\right)\div(x^2-y^2)$
+%%    \item $\left(\frac{1}{x-1}-\frac{1}{x+1}\right)\div\frac{1-x^2}{x}$
+%%    \item $\frac{1}{x-1}-\frac{1}{x+1}\div\frac{1-x^2}{x}$
+%%    \item $\frac{1}{x-1}-\frac{1}{x+1}\cdot\frac{1-x^2}{x}$
+%%    \item $\left(\frac{1}{x-1}-\frac{1}{x+1}\right)\cdot\frac{1-x^2}{x}$
+%%    \item $\frac{\displaystyle\frac{1}{1-x}-\frac{1}{x}}{\displaystyle\frac{1}{1-x^2}}$
+%%      \item $\frac{\displaystyle 1 -\frac{7}{y}+\frac{12}{y^2}}{\displaystyle 1+\frac{1}{y}-\frac{20}{y^2}}$
+%%   \end{enumerate}
+%%  \end{multicols}
+%% \end{problem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+\end{document}
