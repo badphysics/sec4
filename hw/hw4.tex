@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt]{article}
+ \usepackage{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ,multicol}
+\pagestyle{fancy}
+%\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{Homework 4} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{problem}{1}
+  Solve,
+\begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item $6r+7=13+7r $ 
+  \item $13-4x=1-x $ 
+  \item $-7x-3x+2=8x-8 $
+  \item $-8x-x=x-4x $
+  \item $14+5b+7-2b = 1+5b $ 
+  \item $n+2=-14-n $     
+  \item $n-3n=14-4n $ 
+  \item $7a-3=3+6a $ 
+  \item $5+2x=2x+6 $ 
+  \item $ -10+x+4-5=7x=5$ 
+  \item $ -8n+4(1+5n=-6n-14$ 
+  \item $-6n-20=-2n+4(1-3n) $ 
+  \item $8x+4(4x-3)=4(6x+4)-4 $
+  \item $ 3(1-3x)=2(-4x+7)$
+  \item $-3(x-1)+8(x-3)=6x+7-5x $ 
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{2}
+  Solve,
+  \begin{enumerate}[label=\roman*)]
+  \item 28 less than five times a certain number is 232.  What is the number?
+  \item 15 more than three times a number is the same as ten less than six times the number.  What is the number?
+    \item Sixty more than nine times a number is the same as two less than ten times the number. What is the number?
+  \item The sum of three consecutive integers is 93.  What are the integers?
+  \item The sum of three consecutive even numbers is 246.  What are the numbers
+  \item Find three consecutive odd integers so that the sum of twice the first, the second and three times the third is 152.
+  \item The perimeter of a rectangle is 44.  The length is 5 less than double the width.  Find the dimensions.
+  \item A sofa and a love seat together costs S444. The sofa costs double the love seat. How much do they each cost?
+  \item A bicycle and a bicycle helmet cost 240 dollars. How much did each cost, if the bicycle cost 5 times as much as the helmet?
+  \item Of 240 stamps that harry and his sister collected, Harry collected 3 times as any as his sisters. How many did each collect?
+  \item A lab technician cuts a 12 inch piece off tubing into two pieces in such a way that one piece is 2 times longer than the other.
+  \item The total cost for tuition plus room and board at State University is 2,584 dollars. Tuition costs 704 dollars more than room and board. What is the tuition fee?
+  \item The cost of a private pilot course is 1,275 dollars. The flight portion costs 625 dollars more than the groung school portion. What is the cost of each?
+  \end{enumerate}
+
+\end{problem}
+
+\noindent {\large \bf In addition}
+
+\noindent In addition to the above the student is responsible for completing All problems in section 3.1.
+
+
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+%% \begin{problem}{5} Simplify
+%%  \begin{multicols}{2}
+%%    \begin{enumerate}[label=\roman*)]
+%%    \item $\left(\frac{1}{x}+\frac{1}{y}\right)\div(x^2-y^2)$
+%%    \item $\left(\frac{1}{x-1}-\frac{1}{x+1}\right)\div\frac{1-x^2}{x}$
+%%    \item $\frac{1}{x-1}-\frac{1}{x+1}\div\frac{1-x^2}{x}$
+%%    \item $\frac{1}{x-1}-\frac{1}{x+1}\cdot\frac{1-x^2}{x}$
+%%    \item $\left(\frac{1}{x-1}-\frac{1}{x+1}\right)\cdot\frac{1-x^2}{x}$
+%%    \item $\frac{\displaystyle\frac{1}{1-x}-\frac{1}{x}}{\displaystyle\frac{1}{1-x^2}}$
+%%      \item $\frac{\displaystyle 1 -\frac{7}{y}+\frac{12}{y^2}}{\displaystyle 1+\frac{1}{y}-\frac{20}{y^2}}$
+%%   \end{enumerate}
+%%  \end{multicols}
+%% \end{problem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+\end{document}

@@ -1,0 +1,172 @@
+\documentclass[12pt,letterpaper]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace, mathrsfs}
+\usepackage{amsmath,amsthm,amssymb,amsfonts, 
+hyperref, color, graphicx, enumitem}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage{geometry}
+\usepackage{graphicx}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ \everymath{\displaystyle}
+\newenvironment{problem}[2][Problem:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{claim}[2][Claim:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{defn}[2][Definition:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Sec 4}
+\newcommand{\term}{Winter 2019}
+\newcommand{\examnum}{}
+\newcommand{\examdate}{Exam 1}
+\newcommand{\timelimit}{90 min}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{Name:}{Exam 1}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\textbf{\examnum}\\
+\textbf{\examdate} &&
+\textbf{Time Limit: \timelimit}  \\ 
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+
+
+\begin{minipage}[t]{3.7in}
+\vspace{0pt}
+\begin{itemize}
+
+\item \textbf{DO NOT open the exam booklet until you are told to begin. You should write your name and section number at the top and read the instructions.}
+
+\vfill
+
+\item Organize your work, in a reasonably neat and coherent way, in
+the space provided. If you wish for something to not be graded, please strike it out neatly. I will grade only work on the exam paper, unless you clearly indicate your desire for me to grade work on additional pages.
+
+\item You may use any results from class, homework or the text, but you must cite the result you are using. You must prove everything else.
+
+\item You needn't spend your time rewriting definitions or axioms on the exam.
+
+\end{itemize}
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{2.3in}
+\vspace{0pt}
+%\cellwidth{3em}
+\gradetablestretch{2}
+%Uncomment this line to make the table display 100 as the total no matter what. This is good for tests with an ommit question.
+%\settabletotalpoints{100}
+\vqword{Problem}
+\addpoints % required here by exam.cls, even though questions haven't started yet.	
+\gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
+
+\end{minipage}
+
+\begin{itemize}
+
+\item When you have completed your test, hand it to me and go have a great weekend!
+
+
+\end{itemize}
+
+\newpage
+
+\begin{questions}
+\addpoints
+\question Evaluate the following expressions.  Do not use a calculator and show all your work.
+\begin{parts}
+\part[3] $\displaystyle 2\cdot(4-3\cdot(5-1)\div 2)$
+  \vfill
+
+\part[3] $ \frac{(4+3\cdot4)}{2^3-2}\cdot(4\cdot 8\div2)$
+    \vfill
+\end{parts}
+
+
+\question Simplify the following expressions and write with only positive exponents.
+\begin{parts}
+\part[3] $\left( \frac{x^{-1}y^2}{y^3x} \right)$
+\vfill
+\part[3] $\frac{2a^3b^4+8b^2}{4a^2b}\div (5a^{-1}b^3)$
+\vfill
+\part[3] $(-2a)^{-3}b^3(3a^2b^{-1})^2$
+\end{parts}
+
+
+\newpage 
+\addpoints
+
+\question Completely factor the following expressions.
+\begin{parts}
+  \part[3] $2x^2-4x+xy-2y$
+  \vfill
+  \part[3] $-2x^3+2x^2+4x$
+  \vfill
+  \part[3] $9-(2x+1)^2$
+  \vfill
+\end{parts}
+
+\newpage
+\addpoints
+\question Simplify each expression
+\begin{parts}
+  \part[3] $\frac{x-8}{x^2+x-72}$
+  \vfill
+  \part[3] $ \frac{y^2-9}{y^2}\div\frac{y^5+3y^4}{y+2}$
+  \vfill
+  \part[3] $\frac{3x}{x^2-x-2}-\frac{2+x}{x^2-1}$
+  \vfill
+\end{parts}
+
+
+\newpage
+\addpoints
+\question Evaluate or express in terms of a radical which cannot be simplified. There should be no radicals left in denominators.
+\begin{parts}
+  \part[3] $\left( -\frac{8}{27} \right)^{2/3}$
+  \vfill
+  \part[3] $\frac{\sqrt{3}-\sqrt{5}}{\sqrt{3}+\sqrt{7}}$
+\vfill
+  \part[3] $ \sqrt{48}$
+  \vfill
+\end{parts}
+
+%% \question Simplify and radicalize the denominator.
+%% \begin{parts}
+%%   \part[3] $\frac{1}{\sqrt{7}}$
+%%   \vfill
+%%   \part[3] $\frac{\sqrt{11}+\sqrt{5}}{\sqrt{11}-\sqrt{5}}$
+%%   \vfill
+%% \end{parts}
+
+
+%\bonusquestion[5] This is a bonus question. It has points but they are not added on the cover page.
+%\vfill
+
+\end{questions}
+\end{document}

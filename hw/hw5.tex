@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt]{article}
+ \usepackage{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ,multicol}
+\pagestyle{fancy}
+%\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{Homework 5} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{problem}{1}
+    Solve for the missing variable,
+  \begin{enumerate}[label=\roman*)]
+  \item $P = 2(L+(w+4)$ where $P = 29$ and $L = 12$ 
+  \item $A = (L+2)(w + 5) $ where $A = 40$ and $w = 3$ 
+  \item $C = a-2\frac{A}{b}$ where $a = -2$, $A = 3$ and $b=7$
+  \item $a^2 = c^2 - b^2$ where $a = 3$ and $c = 5$
+  \item $a =\sqrt{b^2+b^2}$ where $c=-15$ and $b=-20$
+  \item $F = \frac{11}{3}C -31$ where $F = 98$
+  \end{enumerate}
+
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{2}
+  Solve,
+  \begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item $\displaystyle \left\{\begin{aligned}[lcr] y-5x & = &  -3 \\ -5y-x & = &  -11 \end{aligned}\right.$
+  \item $\displaystyle \left\{\begin{aligned}[lcr] 2x-6y & = &  -24 \\ x-5y & = &  -22 \end{aligned}\right.$
+  \item $\displaystyle \left\{\begin{aligned}[lcr] 6x+4y & = &  -14 \\ x-2y & = &  -13 \end{aligned}\right.$
+  \item $\displaystyle \left\{\begin{aligned}[lcr] -5x+y & = &  -17 \\ -7x+8y & = & 5 \end{aligned}\right.$
+  \item $\displaystyle \left\{\begin{aligned}[lcr] 2x-3y & = &  7 \\ -3x+y & = &  -7 \end{aligned}\right.$
+  \item $\displaystyle \left\{\begin{aligned}[lcr] 3x+2y & = &  1 \\ x-5y & = &  6 \end{aligned}\right.$
+    \item $\displaystyle \left\{\begin{aligned}[lcr] -x+y & = &  5 \\ 2x+y & = &  -4 \end{aligned}\right.$
+
+
+
+
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+
+\noindent {\large \bf In addition}
+
+\noindent In addition to the above the student is responsible for completing All problems in section 3.2 and 3.3.
+
+
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+%% \begin{problem}{5} Simplify
+%%  \begin{multicols}{2}
+%%    \begin{enumerate}[label=\roman*)]
+%%    \item $\left(\frac{1}{x}+\frac{1}{y}\right)\div(x^2-y^2)$
+%%    \item $\left(\frac{1}{x-1}-\frac{1}{x+1}\right)\div\frac{1-x^2}{x}$
+%%    \item $\frac{1}{x-1}-\frac{1}{x+1}\div\frac{1-x^2}{x}$
+%%    \item $\frac{1}{x-1}-\frac{1}{x+1}\cdot\frac{1-x^2}{x}$
+%%    \item $\left(\frac{1}{x-1}-\frac{1}{x+1}\right)\cdot\frac{1-x^2}{x}$
+%%    \item $\frac{\displaystyle\frac{1}{1-x}-\frac{1}{x}}{\displaystyle\frac{1}{1-x^2}}$
+%%      \item $\frac{\displaystyle 1 -\frac{7}{y}+\frac{12}{y^2}}{\displaystyle 1+\frac{1}{y}-\frac{20}{y^2}}$
+%%   \end{enumerate}
+%%  \end{multicols}
+%% \end{problem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+\end{document}
