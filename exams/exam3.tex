@@ -1,0 +1,175 @@
+\documentclass[12pt,letterpaper]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace, mathrsfs}
+\usepackage{amsmath,amsthm,amssymb,amsfonts, 
+hyperref, color, graphicx, enumitem}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pstricks-add}
+\usepackage{auto-pst-pdf}
+
+\usepackage{sansmath}
+\usepackage{etoolbox}
+\pretocmd{\pshlabel}{\color{RoyalBlue4}\sansmath}{}{}
+\pretocmd{\psvlabel}{\color{RoyalBlue4}\sansmath}{}{}{}%
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ \everymath{\displaystyle}
+\newenvironment{problem}[2][Problem:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{claim}[2][Claim:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{defn}[2][Definition:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Sec 4}
+\newcommand{\term}{Winter 2019}
+\newcommand{\examnum}{}
+\newcommand{\examdate}{Exam 3}
+\newcommand{\timelimit}{90 min}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{Name:}{Exam 3}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\textbf{\examnum}\\
+\textbf{\examdate} &&
+\textbf{Time Limit: \timelimit}  \\ 
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+
+
+\begin{minipage}[t]{3.7in}
+\vspace{0pt}
+\begin{itemize}
+
+\item \textbf{DO NOT open the exam booklet until you are told to begin. You should write your name and section number at the top and read the instructions.}
+
+\vfill
+
+\item Organize your work, in a reasonably neat and coherent way, in
+the space provided. If you wish for something to not be graded, please strike it out neatly. I will grade only work on the exam paper, unless you clearly indicate your desire for me to grade work on additional pages.
+
+\item You may use any results from class, homework or the text, but you must cite the result you are using. You must prove everything else.
+
+\item You needn't spend your time rewriting definitions or axioms on the exam.
+
+\item Show all of your work.  You may not receive full credit for correct answers if supporting work is not demonstrated.
+\end{itemize}
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{2.3in}
+\vspace{0pt}
+%\cellwidth{3em}
+\gradetablestretch{2}
+%Uncomment this line to make the table display 100 as the total no matter what. This is good for tests with an ommit question.
+%\settabletotalpoints{100}
+\vqword{Problem}
+\addpoints % required here by exam.cls, even though questions haven't started yet.	
+\gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
+
+\end{minipage}
+
+\begin{itemize}
+
+\item When you have completed your test, hand it to me and go have a great weekend!
+
+
+\end{itemize}
+
+\newpage
+
+\begin{questions}
+\addpoints
+\question Solve for x,
+
+\begin{parts}
+  \part[5] $\displaystyle \log_{16}x = \frac{1}{2}$
+  \vfill
+  \part[5] $\displaystyle \log_{\frac{1}{2}} (2x+1) = 4 $
+  \vfill
+\end{parts}
+
+\question Solve each inequality,
+
+\begin{parts}
+  \part[5] $9x+13\geq 8x$
+  \vfill
+  \part[5] $8 \geq 2x+5 > -1$
+  \vfill
+\end{parts}
+
+
+
+\newpage 
+\addpoints
+\question Find the domain of the following functions.
+\begin{parts}
+  \part[3] $f(x) = x^2-3x+1$
+  \vspace{1in}
+  \part[4] $\displaystyle g(x) =\frac{\sqrt{x}}{x-1}$
+  \vspace{1in}
+%  \part[5] for the function $g(x)$ above evaluate $g(0)$, $g(4)$ and $g(16)-g(64)$.
+ % \vspace{1in}
+\end{parts}
+
+\question For the points $(0,-2)$ and $(4,0)$,
+\begin{parts}
+  \part[5] find the slope of the line passing through the points.
+  \vfill
+  \part[5] find the equation of the line passing through the points.
+  \vfill
+\end{parts}
+
+\newpage
+\addpoints
+
+\question for the function $g(x) = x^2+6x+5$,
+\begin{parts}
+  \part[3] find the vertex.
+  \vfill
+  \part[3] find the $x$-intercepts.
+  \vfill
+  \part[3] find the $y$-intercept.
+  \vfill
+  \part[6] Graph the function,
+  
+  \psset{unit=6mm, ticks=none, xlabelsep=1pt, ylabelsep=1pt, arrowinset=0.12}%, l
+\psset{gridwidth=0.3pt, subgriddiv=1,gridlabels=0pt}
+\begin{pspicture*}(-10,-10.5)(10,10)
+\psgrid(-10,-10)(10,10)
+\psaxes[labelFontSize=\scriptstyle, linecolor=SteelBlue]{<->}(0,0)(-10,-10)(10,10)[\textsf{X}\rule{0pt}{2.25ex} ,-120][\textsf{Y} , -150]
+\psset{linecolor=DodgerBlue4, tickcolor=white, subtickcolor=DodgerBlue4, gridlabelcolor=DodgerBlue4, ,linewidth = 1.2pt}%
+\end{pspicture*}
+\end{parts}
+
+
+
+
+
+\end{questions}
+\end{document}
